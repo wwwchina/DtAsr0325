@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/four_round_conner_white"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="如何提高号码识别准确率："
+    android:textColor="#FF0000"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:layout_marginHorizontal="10dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.说话声音洪亮\n2.使用标准普通话\n3.保证环境安静无杂音\n4.手机麦克风音量调到最大"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/cancle_order_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    确    定    "
+        android:textColor="#ffffff"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
