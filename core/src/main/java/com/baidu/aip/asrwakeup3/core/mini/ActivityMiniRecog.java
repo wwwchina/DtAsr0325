@@ -269,6 +269,7 @@ public class ActivityMiniRecog extends AppCompatActivity implements EventListene
                         setTxtResult(resultTextFinal);
 
                         if(errorCount>=3){
+                            btn.performClick();
                             showDialog();
                             return;
                         }
@@ -277,6 +278,7 @@ public class ActivityMiniRecog extends AppCompatActivity implements EventListene
                         }
                         return;
                     }
+                    errorCount=0;
                     resultTextFinal+=partialResult+"\n";
                     setTxtResult(resultTextFinal);
                     if (isClick) {
@@ -419,9 +421,7 @@ public class ActivityMiniRecog extends AppCompatActivity implements EventListene
             public void onClick(View view) {
                 alertDialog.cancel();
                 errorCount=0;
-                if(isClick){
-                    start();
-                }
+                btn.performClick();
             }
         });
         alertDialog.setCanceledOnTouchOutside(false);
